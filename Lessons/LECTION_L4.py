@@ -6,15 +6,34 @@
 ● ссылку на новость;
 ● дата публикации.'''
 # pip install lxml
+# pip install requests
 
 from pprint import pprint
 from lxml import html
 import requests
-import time
+import datetime
 
-header = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36'}
-req_to_mail = 'https://mail.ru/'
-response = requests.get(req_to_mail)
-dom = html.fromstring(response.text)
-names = dom.xpath('//li[class="tabs-content__item svelte-1mkyub8"]')
-pprint(names)
+# получение новеостей с russian.rt.com
+def news_rt():
+    newsfeed=[]
+    news_dict = {}
+    main_link = 'https://russian.rt.com'
+    header = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36'}
+    response = requests.get(main_link, headers=header)
+    try:
+        root = html.fromstring(response.text)
+        path_newsfeed = root.xpath('//ul[contains(@class, "listing__rows_main-news")]/li')
+        for news in path_newsfeed:
+            news_dict = {}
+            news_dict['link'] = main_link + ''.join(news.xpath('.//a/@href'))
+            news_dict['site'] = main_link
+            news_dict['name'] = news.xpath('.//a/text()')[0].strip()
+            #news_dict['date'] = news.xpath('.//*/text()')[0].strip()
+            news_dict['date'] = ''.join(news.xpath('.//div[contains(@class,"card__date")]/text()')).strip()
+            newsfeed.append(news_dict)
+    except:
+        print("Ошибка запроса russian.rt.com")
+    return newsfeed
+newsfeed_rt = news_rt()
+pprint(newsfeed_rt)
+
