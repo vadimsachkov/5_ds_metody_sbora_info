@@ -42,6 +42,37 @@ def news_yandex ():
         print ("Ошибка запроса yandex.ru")
     return hotnews
 
+# получение новеостей с news.yandex.ru
+def news_newsyandex ():
+    hotnews=[]
+    news_dict={}
+    main_link = 'https://yandex.ru/news/'
+    header = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36' }
+    response = requests.get(main_link, headers=header)
+    try:
+
+        root = html.fromstring(response.text)
+#        news=root.xpath('//ul[@class="tabs-content"]/li[@class="tabs-content__item"]')
+        path_hotnews = root.xpath('//div[@class="news-card__content"]/div/a')
+        for news in path_hotnews:
+            try:
+                news_dict={}
+                news_dict['link']=news.xpath('@href')[0]
+                news_dict['site'] = news.xpath('parent::*/parent::*/following-sibling::div//span[@class="mg-card-source__source"]/a')[0].text
+                news_dict['name'] = news.xpath('.//h2/text()')[0]
+                news_dict['date'] = news.xpath('parent::*/parent::*/following-sibling::div//span[@class="mg-card-source__time"]')[0].text
+                hotnews.append(news_dict)
+            except:
+                pass
+
+#el = doc.xpath("//div[contains(@class, 'channel')]")
+
+    except:
+        print ("Ошибка запроса yandex.ru")
+    return hotnews
+
+
+
 
 # получение новеостей с mail.ru
 def news_mail ():
@@ -96,6 +127,7 @@ def news_lenta ():
 
 
 hotnews_y=news_yandex()
+hotnews_ny=news_newsyandex()
 hotnews_m=news_mail()
 hotnews_l=news_lenta()
-pprint(hotnews_m+hotnews_y+hotnews_l)
+pprint(hotnews_m+hotnews_y+hotnews_l+hotnews_ny)
