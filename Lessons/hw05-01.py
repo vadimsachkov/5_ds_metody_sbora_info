@@ -16,6 +16,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 import time
 from pymongo import MongoClient
 from pprint import pprint
+import json
 
 chrome_options = Options()
 chrome_options.add_argument('start-maximized')
@@ -188,5 +189,10 @@ driver.close()
 print (f' Всего прочитано писем: {len(letters)}, записано в базу: {mail_col.estimated_document_count()}')
 
 #Читаем первое письмо из базы
-pprint(mail_col.find()[0])
+pprint(mail_col.find()[1])
 
+'''# читаем из базы письма и сохраняем f json
+to_json = {'mail':list(mail_col.find())}
+# сохраняем всю информацию в файле json.
+with open('mail_letters.json', 'w') as outfile:
+    json.dump(to_json, outfile)'''
