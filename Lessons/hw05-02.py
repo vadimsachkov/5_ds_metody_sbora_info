@@ -85,9 +85,10 @@ def mvideo(goods):
                 # нам немного подфартило и в атрибуте data-product-info есть и название и цена. воспользуемся
                 dict_product = json.loads(a_good.get_attribute('data-product-info'))
                 good['name'] = dict_product["productName"]
-                good['price'] = dict_product["productName"]
+                good['price'] = dict_product["productPriceLocal"]
                 good['img'] = a_good.find_element_by_xpath('.//img').get_attribute('src')
                 goods.append(good)
+                print(f"{good['name']}, {good['price']}")
             except:
                 print("Error")
 
@@ -133,10 +134,13 @@ def onlinetrade(goods):
             try:
                 #a_good = li_good.find_element_by_xpath('.//a[@class="indexGoods__item__image"]')
                 good['link'] = li_good.find_element_by_xpath('.//a[@class="indexGoods__item__image"]').get_attribute('href')
+                # так как товары скрыты то text silenium не показывает. Но мы же хитрожопые - достаем имя товара и цену   через скрипт
                 good['name'] = driver.execute_script("return arguments[0].innerHTML", li_good.find_element_by_xpath('.//a[@class="indexGoods__item__name"]'))
-                good['price'] = li_good.find_element_by_xpath('//span[@class="price"]').text
+ #               good['price'] = li_good.find_element_by_xpath('.//span[contains(@class,"price")]').text
+                good['price'] = driver.execute_script("return arguments[0].innerHTML", li_good.find_element_by_xpath('.//span[contains(@class,"price")]'))
                 good['img'] = li_good.find_element_by_xpath('.//a[@class="indexGoods__item__image"]/img').get_attribute('src')
                 goods.append(good)
+                print(f"{good['name']}, {good['price']}")
             except:
                 print("Error")
 
