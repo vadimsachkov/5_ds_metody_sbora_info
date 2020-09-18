@@ -36,8 +36,20 @@ goods={}
 try:
     # начинаем передвигаться по письмам, чтобы
     while True:
-        parent_hits_obj = driver.find_element_by_xpath('//div[@class="gallery-layout" and descendant::div[contains(text(), "Хиты продаж")]]//ul[@data-init="galleryCarousel"]')
-        #hits_obj = parent_hits_obj.find_element_by_xpath('//ul[@data-init="galleryCarousel"]')
+ #       parent_hits_obj = driver.find_element_by_xpath('//div[@class="gallery-layout" and descendant::div[contains(text(), "Хиты продаж")]]//ul[@data-init="galleryCarousel"]')
+        parent_hits_obj = driver.find_element_by_xpath('//div[contains(text(), "Хиты продаж")]')
+        # ищем родителя у которого класс gallery-layout
+        parent_hit=parent_hits_obj
+        while True:
+            try:
+                parent_hit=parent_hit.parent
+                if parent_hits_obj.tag_name=='div' and  parent_hits_obj.get_attribute('class') == 'gallery-layout'
+                        break;
+            except:
+                pass
+
+
+#hits_obj = parent_hits_obj.find_element_by_xpath('//ul[@data-init="galleryCarousel"]')
         parent_hits_obj.find_element_by_xpath('//a[@data-product-info]').get_attribute('href')
         time.sleep(1)
         mails_count = len(goods) #  запоминаем столко писем было до добавления
