@@ -1,0 +1,25 @@
+
+1. scrapy startproject jobparser .
+    поставить точку в конце чтобы проект собрался в папке jobparser
+
+    создаться подпапка ./jobparser где и будет проект
+
+2. переписать файлы с урока в созданную подпапку ./jobparser
+
+3. создаем паука
+    scrapy genspider hhru hh.ru
+        где hhru имя паука, hh.ru   сайта стартовый
+        создастся файл ./spiders/hhru.py   где и пропишутся  заданные выше параметры:
+
+        class HhruSpider(scrapy.Spider):
+        name = 'hhru'
+        allowed_domains = ['hh.ru']
+4. настраиваем settings.py
+    -- вписываем юзер агента из браузера: chrome://version
+    USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36'
+
+    -- отключаем ROBOTSTXT_OBEY = False
+        так как роботы в данное время мало используются
+
+    -- устанавливаем кол-во запросов в секунду 16,  чтобы сильно не загружать сервер
+        CONCURRENT_REQUESTS = 16

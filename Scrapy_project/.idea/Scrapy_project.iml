@@ -7,4 +7,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
+  <component name="PackageRequirementsSettings">
+    <option name="requirementsPath" value="C:\Users\test\Documents\GitHub\ds_metody_sbora_info\Scrapy_project\requirements.txt" />
+  </component>
 </module>
