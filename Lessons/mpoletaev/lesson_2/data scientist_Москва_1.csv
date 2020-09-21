@@ -1,0 +1,203 @@
+;website;salary_min;salary_max;salary_comment;vacancy_name;vacancy_url;employer_name;employer_url;location;salary_currency
+0;hh.ru;120000;170000;;Data Scientist;https://spb.hh.ru/vacancy/38660521?query=data%20scientist;ООО КИБЕРБОРЕЯ;https://hh.ru/employer/4835563;Москва;руб.
+1;hh.ru;;120000;;Data scientist (middle/junior);https://spb.hh.ru/vacancy/38961658?query=data%20scientist; Открытые Технологии;https://hh.ru/employer/2808;Москва, Серпуховская;руб.
+2;hh.ru;150000;;;Python Data Scientist;https://spb.hh.ru/vacancy/38732890?query=data%20scientist; Web Interactive World;https://hh.ru/employer/5552;Москва, Кузнецкий мост и еще 3 ;руб.
+3;hh.ru;150000;;;Data Scientist;https://spb.hh.ru/vacancy/38883862?query=data%20scientist; GFAIVE;https://hh.ru/employer/2081630;Москва;руб.
+4;hh.ru;200000;;;Data Scientist (Computer Vision);https://spb.hh.ru/vacancy/38638251?query=data%20scientist; СофтТелематика;https://hh.ru/employer/1925969;Москва, Савеловская;руб.
+5;hh.ru;90000;200000;;Data Scientist (Computer Vision);https://spb.hh.ru/vacancy/38090271?query=data%20scientist; Tevian (ООО Технологии видеоанализа);https://hh.ru/employer/4046921;Москва;руб.
+6;hh.ru;;;;Data Scientist;https://spb.hh.ru/vacancy/39051168?query=data%20scientist; Komfort IQ;https://hh.ru/employer/4740975;Москва;
+7;hh.ru;;;;Data scientist / analyst;https://spb.hh.ru/vacancy/39044337?query=data%20scientist;ПАО Ростелеком;https://hh.ru/employer/2748;Москва;
+8;hh.ru;;500000;;Data Scientist (middle or senior);https://spb.hh.ru/vacancy/38576646?query=data%20scientist;ООО РАБЛЗ;https://hh.ru/employer/2223982;Москва;руб.
+9;hh.ru;120000;150000;;Data scientist /аналитик данных (медицина, наука, образование, социология);https://spb.hh.ru/vacancy/38222140?query=data%20scientist; ГК «ВИЗАВИ Консалт»;https://hh.ru/employer/1326;Москва;руб.
+10;hh.ru;;;;Data Scientist (Montenegro);https://spb.hh.ru/vacancy/39037120?query=data%20scientist; LIBERTEX;https://hh.ru/employer/993;Москва;
+11;hh.ru;200000;;;Ведущий Data scientist (ведущий инженер по работе с данными);https://spb.hh.ru/vacancy/38984081?query=data%20scientist; АСТ для профессионалов;https://hh.ru/employer/4121?dpt=4121-4121-exp;Москва;руб.
+12;hh.ru;200000;;;Senior Data Scientist;https://spb.hh.ru/vacancy/38226025?query=data%20scientist; FunCorp;https://hh.ru/employer/1212374;Москва;руб.
+13;hh.ru;;;;Data Scientist (Middle);https://spb.hh.ru/vacancy/39040753?query=data%20scientist; ANCOR FinTech;https://hh.ru/employer/1947330;Москва, Румянцево;
+14;hh.ru;;;;Data Scientist;https://spb.hh.ru/vacancy/39020025?query=data%20scientist;ООО Глобус, Сеть гипермаркетов;https://hh.ru/employer/18384;Москва, Речной вокзал;
+15;hh.ru;;;;Data scientist/Python;https://spb.hh.ru/vacancy/38981353?query=data%20scientist; МИА Россия сегодня;https://hh.ru/employer/1425152;Москва, Парк культуры и еще 1 ;
+16;hh.ru;100000;;;Data scientist /аналитик данных;https://spb.hh.ru/vacancy/38915999?query=data%20scientist;ООО ЮНИМ;https://hh.ru/employer/1573832;Москва;руб.
+17;hh.ru;;;;Data Scientist (EY Technology);https://spb.hh.ru/vacancy/38981493?query=data%20scientist; EY (Эрнст энд Янг);https://hh.ru/employer/4900;Москва;
+18;hh.ru;;;;Аналитик данных/Data scientist;https://spb.hh.ru/vacancy/37570794?query=data%20scientist; ИНВИТРО;https://hh.ru/employer/6093;Москва;
+19;hh.ru;;;;Аналитик (Data Scientist);https://spb.hh.ru/vacancy/39055069?query=data%20scientist; Комус;https://hh.ru/employer/5694;Москва, Курская;
+20;hh.ru;;;;Data scientist (Центр развития платформы Sber.DS);https://spb.hh.ru/vacancy/39008902?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+21;hh.ru;;;;Data Scientist (computer vision);https://spb.hh.ru/vacancy/36997030?query=data%20scientist; Prequel;https://hh.ru/employer/3297595;Москва, Деловой центр;
+22;hh.ru;;;;Senior Data Scientist (remotely);https://spb.hh.ru/vacancy/38924294?query=data%20scientist; VIAcode;https://hh.ru/employer/84051;Москва;
+23;hh.ru;;;;Data Scientist/Senior Data Scientist;https://spb.hh.ru/vacancy/38995758?query=data%20scientist; СИТИЛИНК;https://hh.ru/employer/3148;Москва, Мякинино;
+24;hh.ru;;;;Data Scientist (NLP);https://spb.hh.ru/vacancy/39033904?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+25;hh.ru;;;;Главный специалист направления операционной отчетности (Аналитик SQL, Data Scientist);https://spb.hh.ru/vacancy/37903328?query=data%20scientist; «Почта России», Офис;https://hh.ru/employer/4352?dpt=pochta-4352-office;Москва, Верхние Котлы и еще 1 ;
+26;hh.ru;;;;Lead data scientist;https://spb.hh.ru/vacancy/38665916?query=data%20scientist; Сидякина Ольга Николаевна;https://hh.ru/employer/4731502;Москва;
+27;hh.ru;;;;Data Scientist (Validation);https://spb.hh.ru/vacancy/38134092?query=data%20scientist; «РОСБАНК, Societe Generale Group», с опытом работы;https://hh.ru/employer/599?dpt=rosbank-599-opyt;Москва;
+28;hh.ru;;;;Middle data scientist;https://spb.hh.ru/vacancy/37226477?query=data%20scientist; МАГНИТ, Розничная сеть;https://hh.ru/employer/49357;Москва, Технопарк;
+29;hh.ru;;;;Data Scientist;https://spb.hh.ru/vacancy/38901600?query=data%20scientist; Datana (ГК ЛАНИТ);https://hh.ru/employer/4470218;Москва;
+30;hh.ru;;;;Data Scientist (комплексная оценка рисков);https://spb.hh.ru/vacancy/38691954?query=data%20scientist; «РОСБАНК, Societe Generale Group», с опытом работы;https://hh.ru/employer/599?dpt=rosbank-599-opyt;Москва, Комсомольская и еще 2 ;
+31;hh.ru;;;;Тьютор студентов буткемпа Data Science;https://spb.hh.ru/vacancy/39026500?query=data%20scientist; SkillFactory;https://hh.ru/employer/2869446;Москва;
+32;hh.ru;;;;Data инженер (Big data);https://spb.hh.ru/vacancy/38824485?query=data%20scientist; Лента, федеральная розничная сеть, IT ;https://hh.ru/employer/7172?dpt=7172-7172-it;Москва;
+33;hh.ru;;;;Data Scientist (HR data);https://spb.hh.ru/vacancy/38679373?query=data%20scientist; Северсталь. Управляющая компания;https://hh.ru/employer/6041?dpt=severstal-6041-MAIN;Москва, Войковская;
+34;hh.ru;;;;Data Scientist;https://spb.hh.ru/vacancy/38996854?query=data%20scientist; «РОСБАНК, Societe Generale Group», с опытом работы;https://hh.ru/employer/599?dpt=rosbank-599-opyt;Москва, Комсомольская и еще 2 ;
+35;hh.ru;;;;Data Scientist (Big Data);https://spb.hh.ru/vacancy/38922630?query=data%20scientist;ПАО «МТС»,IT;https://hh.ru/employer/3776?dpt=mts-3776-it;Москва, Технопарк;
+36;hh.ru;;;;Data Scientist (клиентская аналитика);https://spb.hh.ru/vacancy/38922500?query=data%20scientist;ПАО МегаФон, IT;https://hh.ru/employer/3127?dpt=mgfn-3127-it;Москва, Маяковская и еще 2 ;
+37;hh.ru;300000;;;Global Head of Data Science & Analytics;https://spb.hh.ru/vacancy/38798824?query=data%20scientist; Dostavista Global;https://hh.ru/employer/3730831;Москва;руб.
+38;hh.ru;;;;Data Scientist в Корпоративно-Инвестиционный Блок Банка;https://spb.hh.ru/vacancy/36550195?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва, Кутузовская и еще 1 ;
+39;hh.ru;;100000;;Senior Data Scientist / NLP инженер;https://spb.hh.ru/vacancy/38996966?query=data%20scientist;ООО Диджитал медикэл оперейшнс;https://hh.ru/employer/3086591;Москва, Деловой центр и еще 2 ;руб.
+40;hh.ru;;;;Data scientist (Сберсоветник);https://spb.hh.ru/vacancy/38580904?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+41;hh.ru;;;;Quantitative Researcher (Deep Research);https://spb.hh.ru/vacancy/37374211?query=data%20scientist; WorldQuant;https://hh.ru/employer/826770;Москва, Белорусская;
+42;hh.ru;;;;Senior Data scientist;https://spb.hh.ru/vacancy/38324035?query=data%20scientist;ООО МФК Займ Онлайн;https://hh.ru/employer/1039977;Москва, Динамо и еще 1 ;
+43;hh.ru;;;;Data scientist (аналитик/ моделист);https://spb.hh.ru/vacancy/38037678?query=data%20scientist; Star-staff;https://hh.ru/employer/1111058;Москва;
+44;hh.ru;;;;Data Scientist;https://spb.hh.ru/vacancy/37523659?query=data%20scientist;АО Гринатом;https://hh.ru/employer/665467;Москва, Верхние Котлы и еще 2 ;
+45;hh.ru;;;;Data Scientist;https://spb.hh.ru/vacancy/38296454?query=data%20scientist;ТОО Business and Technology Services;https://hh.ru/employer/1038826;Москва;
+46;hh.ru;;;;Middle Data Scientist NLP;https://spb.hh.ru/vacancy/38440446?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва, Кутузовская и еще 1 ;
+47;hh.ru;;;;Data Scientist, Дивизион «Массовая персонализация»;https://spb.hh.ru/vacancy/38937276?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+48;hh.ru;;;;Data scientist/ Директор в управлении розничного моделирования;https://spb.hh.ru/vacancy/37625294?query=data%20scientist; Банк ВТБ (ПАО);https://hh.ru/employer/4181;Москва;
+49;hh.ru;;;;Data Scientist (Транзакционный бизнес, корпоративный блок);https://spb.hh.ru/vacancy/38260133?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+50;hh.ru;;;;Руководитель направления по исследованию данных/Data Scientist;https://spb.hh.ru/vacancy/38733057?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+51;hh.ru;180000;200000;;Data Scientist (ML/CV);https://spb.hh.ru/vacancy/38742848?query=data%20scientist;ООО Искусственный интеллект;https://hh.ru/employer/4718359;Москва;руб.
+52;hh.ru;;;;Middle Data Scientist (ДККК);https://spb.hh.ru/vacancy/38636757?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+53;hh.ru;;;;Data scientist (Центр акционерного риска);https://spb.hh.ru/vacancy/38859023?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+54;hh.ru;250000;;;Machine Learning Developer (AWS);https://spb.hh.ru/vacancy/38645926?query=data%20scientist;ООО ClearScale;https://hh.ru/employer/1574063;Москва;руб.
+55;hh.ru;;;;Lead Computer Vision Data Scientist;https://spb.hh.ru/vacancy/38387169?query=data%20scientist; Сбербанк для руководителей;https://hh.ru/employer/3529?dpt=3529-3529-lead;Москва, Кутузовская;
+56;hh.ru;;;;Руководитель направления по исследованию данных(Data Scientist);https://spb.hh.ru/vacancy/34777225?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+57;hh.ru;;;;Senior Data Scientist в NLP лабораторию;https://spb.hh.ru/vacancy/38426832?query=data%20scientist; СКБ Контур;https://hh.ru/employer/41862;Москва;
+58;hh.ru;;;;Data Scientist (платформа игр и приложений в Одноклассниках);https://spb.hh.ru/vacancy/38929243?query=data%20scientist; Mail.ru Group;https://hh.ru/employer/15478;Москва, Аэропорт;
+59;hh.ru;;;;Python developer (Data Engineer);https://spb.hh.ru/vacancy/33647219?query=data%20scientist; Admitad;https://hh.ru/employer/790022;Москва, Дмитровская;
+60;hh.ru;;;;Educational Content Creator in Data Analysis & Data Science at Practicum;https://spb.hh.ru/vacancy/38855699?query=data%20scientist; Яндекс;https://hh.ru/employer/1740;Москва;
+61;hh.ru;;;;Junior Data Scientist;https://spb.hh.ru/vacancy/38795775?query=data%20scientist; АДВ;https://hh.ru/employer/1994;Москва, Павелецкая и еще 1 ;
+62;hh.ru;;;;Team Lead Data Scientist (Surge Pricing);https://spb.hh.ru/vacancy/37457846?query=data%20scientist; Ситимобил;https://hh.ru/employer/188712;Москва;
+63;hh.ru;;;;Data Scientist;https://spb.hh.ru/vacancy/38886823?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+64;hh.ru;;;;Senior System Software Engineer (Computer Vision - AI);https://spb.hh.ru/vacancy/38585324?query=data%20scientist; NVIDIA;https://hh.ru/employer/5135;Москва, Марьина Роща и еще 1 ;
+65;hh.ru;;;;Senior Data Scientist (Дивизион ЦКР);https://spb.hh.ru/vacancy/38431497?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+66;hh.ru;;;;Senior Data Scientist;https://spb.hh.ru/vacancy/38957734?query=data%20scientist; Luxoft;https://hh.ru/employer/1304;Москва;
+67;hh.ru;;200000;;Data Scientist / Аналитик данных;https://spb.hh.ru/vacancy/38037985?query=data%20scientist; Медиалогия;https://hh.ru/employer/6382;Москва, Дмитровская;руб.
+68;hh.ru;;;;Senior Data инженер;https://spb.hh.ru/vacancy/38824632?query=data%20scientist; Лента, федеральная розничная сеть, IT ;https://hh.ru/employer/7172?dpt=7172-7172-it;Москва;
+69;hh.ru;;;;Senior Data Scientist;https://spb.hh.ru/vacancy/38958683?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+70;hh.ru;;;;Аналитик / data scientist;https://spb.hh.ru/vacancy/38873532?query=data%20scientist; Банк Открытие;https://hh.ru/employer/23040;Москва;
+71;hh.ru;;;;Data scientist;https://spb.hh.ru/vacancy/38715462?query=data%20scientist; ANCOR Consumer Goods;https://hh.ru/employer/1947314;Москва;
+72;hh.ru;;;;Исследователь данных (Data Scientist);https://spb.hh.ru/vacancy/38813529?query=data%20scientist; Российская академия народного хозяйства и государственной службы при Президенте Российской Федерации;https://hh.ru/employer/3508081;Москва, Юго-Западная;
+73;hh.ru;;;;Data Scientists Middle/Senior;https://spb.hh.ru/vacancy/35723655?query=data%20scientist; Альфа-Банк;https://hh.ru/employer/80;Москва, Технопарк;
+74;hh.ru;;;;Data Scientist;https://spb.hh.ru/vacancy/38798676?query=data%20scientist; Лаборатория Касперского;https://hh.ru/employer/1057;Москва;
+75;hh.ru;;;;Senior Data Scientist CV/NLP (команда IDP);https://spb.hh.ru/vacancy/38793204?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+76;hh.ru;;;;Data scientist (Центр по исследованию данных);https://spb.hh.ru/vacancy/38895037?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва, Ленинский проспект;
+77;hh.ru;;;;Senior Data Scientist;https://spb.hh.ru/vacancy/37350561?query=data%20scientist; Циан;https://hh.ru/employer/1429999;Москва, Преображенская площадь;
+78;hh.ru;;;;Lead Data Scientist (RecSys) at Sberbank Corporate;https://spb.hh.ru/vacancy/36550187?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва, Кутузовская и еще 1 ;
+79;hh.ru;;;;Главный менеджер по аналитике данных (Data Scientist);https://spb.hh.ru/vacancy/38879227?query=data%20scientist; Норникель;https://hh.ru/employer/740;Москва;
+80;hh.ru;;;;Senior Data Scientist;https://spb.hh.ru/vacancy/38956895?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+81;hh.ru;;;;Data Scientist;https://spb.hh.ru/vacancy/38822907?query=data%20scientist;ПАО Первая Грузовая Компания;https://hh.ru/employer/219464;Москва, Бауманская и еще 2 ;
+82;hh.ru;;;;Data Scientist;https://spb.hh.ru/vacancy/38829477?query=data%20scientist;ООО PepsiCo;https://hh.ru/employer/581458;Москва, Сокол;
+83;hh.ru;;;;Data Engineer (Middle);https://spb.hh.ru/vacancy/38566217?query=data%20scientist;ООО РАБЛЗ;https://hh.ru/employer/2223982;Москва;
+84;hh.ru;;;;Data Scientist;https://spb.hh.ru/vacancy/37830594?query=data%20scientist;АО Почтовые технологии;https://hh.ru/employer/4543942;Москва;
+85;hh.ru;200000;280000;;Senior Data Scientist (remote);https://spb.hh.ru/vacancy/38744066?query=data%20scientist; Agiloft;https://hh.ru/employer/1871949;Москва;руб.
+86;hh.ru;;;;Data Scientist in Oil & Gas;https://spb.hh.ru/vacancy/38741801?query=data%20scientist;ООО Инжиниринговый Центр МФТИ по полезным ископаемым;https://hh.ru/employer/1505372;Москва;
+87;hh.ru;;;;Data scientist в Дивизион `Массовая персонализация`;https://spb.hh.ru/vacancy/38527809?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+88;hh.ru;;;;Middle Data Scientist (AutoML);https://spb.hh.ru/vacancy/36486505?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+89;hh.ru;;;;Data scientist;https://spb.hh.ru/vacancy/38789133?query=data%20scientist; Банк Хоум Кредит;https://hh.ru/employer/1496;Москва, Белорусская;
+90;hh.ru;;;;Data scientist (e-commerce);https://spb.hh.ru/vacancy/38464983?query=data%20scientist; АндерСон;https://hh.ru/employer/797003;Москва, Семеновская;
+91;hh.ru;;;;Senior data science;https://spb.hh.ru/vacancy/36815680?query=data%20scientist; МАГНИТ, Розничная сеть;https://hh.ru/employer/49357;Москва;
+92;hh.ru;;;;Data Scientist;https://spb.hh.ru/vacancy/38791377?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+93;hh.ru;;;;Data Scientist;https://spb.hh.ru/vacancy/38825471?query=data%20scientist;ООО ТНТ;https://hh.ru/employer/2155808?dpt=2155808-2155808-tnt;Москва;
+94;hh.ru;;;;Data Scientist;https://spb.hh.ru/vacancy/38308826?query=data%20scientist; Lamoda;https://hh.ru/employer/780654;Москва;
+95;hh.ru;;;;Аналитик генетических данных (Data Scientist);https://spb.hh.ru/vacancy/38270737?query=data%20scientist; Мираторг, Агропромышленный холдинг;https://hh.ru/employer/17275;Москва, Нахимовский проспект;
+96;hh.ru;;;;Data Scientist;https://spb.hh.ru/vacancy/38670548?query=data%20scientist;АО БДО Юникон Бизнес Солюшнс;https://hh.ru/employer/4746710;Москва;
+97;hh.ru;;;;Data Scientist/ML Engineer;https://spb.hh.ru/vacancy/38645097?query=data%20scientist;АО РТИ;https://hh.ru/employer/103944;Москва, Динамо;
+98;hh.ru;;;;Data Scientist;https://spb.hh.ru/vacancy/36519811?query=data%20scientist; Авито;https://hh.ru/employer/84585;Москва;
+99;hh.ru;;;;Data Engineer;https://spb.hh.ru/vacancy/37859453?query=data%20scientist; АШАН Ритейл Россия;https://hh.ru/employer/54979;Москва;
+100;hh.ru;;;;Data Scientist (middle);https://spb.hh.ru/vacancy/37457936?query=data%20scientist; Группа компаний SRG;https://hh.ru/employer/39563;Москва;
+101;hh.ru;;;;Исследователь данных (Data Scientist);https://spb.hh.ru/vacancy/38764274?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+102;hh.ru;;;;Data Scientist (family office);https://spb.hh.ru/vacancy/36697301?query=data%20scientist; WОRKKI;https://hh.ru/employer/4247277;Москва;
+103;hh.ru;;;;Data Scientist;https://spb.hh.ru/vacancy/36357367?query=data%20scientist; Сибур;https://hh.ru/employer/3809?dpt=sbr-3809-sibb;Москва;
+104;hh.ru;;;;Стажер Data Scientist, Группа улучшения бизнес-технологии и ИТ;https://spb.hh.ru/vacancy/38637864?query=data%20scientist; EY (Эрнст энд Янг);https://hh.ru/employer/4900;Москва, Павелецкая;
+105;hh.ru;;;;Data Scientist в управление комплаенс-контроля;https://spb.hh.ru/vacancy/38742347?query=data%20scientist; Райффайзенбанк;https://hh.ru/employer/4023;Москва, Технопарк;
+106;hh.ru;;;;Data Scientist;https://spb.hh.ru/vacancy/38711763?query=data%20scientist;ПАО МТС Банк. Головной офис;https://hh.ru/employer/4496?dpt=4496-4496-office;Москва, Технопарк;
+107;hh.ru;;;;Data Scientist (family office);https://spb.hh.ru/vacancy/38787043?query=data%20scientist; 585, Холдинг;https://hh.ru/employer/22259;Москва;
+108;hh.ru;;;;Data Scientist/NLP;https://spb.hh.ru/vacancy/38676460?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+109;hh.ru;;;;Senior Data Scientist NLP (Удаленная работа);https://spb.hh.ru/vacancy/38549928?query=data%20scientist; AI Superior;https://hh.ru/employer/4821931;Москва;
+110;hh.ru;;;;Data Scientist/ Machine Learning Engineer/ NLP Developer, SberDevices;https://spb.hh.ru/vacancy/38383966?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва, Кутузовская и еще 1 ;
+111;hh.ru;;;;Data Scientist (recommender systems);https://spb.hh.ru/vacancy/38510444?query=data%20scientist;АО Центр программ лояльности;https://hh.ru/employer/4315301;Москва;
+112;hh.ru;;;;Data scientist;https://spb.hh.ru/vacancy/38517270?query=data%20scientist; Recruitment Boutique S.M.Art;https://hh.ru/employer/67952;Москва;
+113;hh.ru;;;;Senior Data Scientist (Surge Pricing);https://spb.hh.ru/vacancy/35409042?query=data%20scientist; Ситимобил;https://hh.ru/employer/188712;Москва;
+114;hh.ru;;;;Data scientist (NLP) - Sberbank AI Lab;https://spb.hh.ru/vacancy/38658864?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+115;hh.ru;;;;AI Research Engineer [Computer Vision, Machine Learning, Algorithms];https://spb.hh.ru/vacancy/38309097?query=data%20scientist; Coleman Services;https://hh.ru/employer/124;Москва;
+116;hh.ru;;;;Data Scientist;https://spb.hh.ru/vacancy/38118383?query=data%20scientist;ООО Ростелеком Информационные Технологии;https://hh.ru/employer/3144945;Москва, Новокузнецкая;
+117;hh.ru;;;;Data engineer;https://spb.hh.ru/vacancy/37742221?query=data%20scientist; «Газпромбанк» (Акционерное общество);https://hh.ru/employer/3388;Москва;
+118;hh.ru;;;;Senior Data Scientist (Computer Vision);https://spb.hh.ru/vacancy/38256176?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва, Кутузовская;
+119;hh.ru;;;;Аналитик данных / Data scientist;https://spb.hh.ru/vacancy/36953584?query=data%20scientist; Программный Продукт, ИТ-компания;https://hh.ru/employer/2393;Москва;
+120;hh.ru;;;;Data analytic/scientist;https://spb.hh.ru/vacancy/38636481?query=data%20scientist; Иннотехнум, Группа компаний;https://hh.ru/employer/4649269;Москва;
+121;hh.ru;;;;Data Scientist Департамента машинного обучения и работе с данными;https://spb.hh.ru/vacancy/38175389?query=data%20scientist; АльфаСтрахование;https://hh.ru/employer/370;Москва, Шаболовская;
+122;hh.ru;;;;Data Scientist;https://spb.hh.ru/vacancy/38079113?query=data%20scientist;ООО Каршеринг Руссия;https://hh.ru/employer/3233751;Москва, Преображенская площадь и еще 1 ;
+123;hh.ru;;;;Data Science аналитик;https://spb.hh.ru/vacancy/38386451?query=data%20scientist; Брокеркредитсервис;https://hh.ru/employer/1833;Москва, Проспект Мира и еще 2 ;
+124;hh.ru;;;;Data Scientist (блок риски);https://spb.hh.ru/vacancy/35217354?query=data%20scientist; Сбербанк для руководителей;https://hh.ru/employer/3529?dpt=3529-3529-lead;Москва;
+125;hh.ru;;;;Team Lead/Senior Data Scientist;https://spb.hh.ru/vacancy/38197527?query=data%20scientist; СКБ Контур;https://hh.ru/employer/41862;Москва;
+126;hh.ru;;;;Data Scientist;https://spb.hh.ru/vacancy/38623967?query=data%20scientist; Инфосистемы Джет;https://hh.ru/employer/3095;Москва, Савеловская;
+127;hh.ru;;150000;;Senior Data Scientist (компьютерное зрение, машинное обучение), г. Сочи;https://spb.hh.ru/vacancy/38157896?query=data%20scientist; ГК «ВИЗАВИ Консалт»;https://hh.ru/employer/1326;Москва;руб.
+128;hh.ru;;;;Data scientist;https://spb.hh.ru/vacancy/38484308?query=data%20scientist; Сбер Маркетинг;https://hh.ru/employer/3982116;Москва, Кутузовская;
+129;hh.ru;;;;Data scientist;https://spb.hh.ru/vacancy/38595162?query=data%20scientist; Мокка;https://hh.ru/employer/1220357;Москва, Тульская;
+130;hh.ru;;;;Менеджер по исследованию больших данных (Data Scientist);https://spb.hh.ru/vacancy/36749314?query=data%20scientist; Tele2;https://hh.ru/employer/4219;Москва;
+131;hh.ru;;150000;;Senior Data Scientist (структурирование данных, машинное обучение) г. Сочи;https://spb.hh.ru/vacancy/38756080?query=data%20scientist; ГК «ВИЗАВИ Консалт»;https://hh.ru/employer/1326;Москва;руб.
+132;hh.ru;;;;Data Scientist (Центр валидации моделей сервисных блоков и экосистемы);https://spb.hh.ru/vacancy/38303563?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва, Кутузовская и еще 1 ;
+133;hh.ru;;;;Data scientist (Маркетинг);https://spb.hh.ru/vacancy/38560676?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+134;hh.ru;;;;Data Scientist;https://spb.hh.ru/vacancy/38504146?query=data%20scientist; МАГНИТ, Розничная сеть;https://hh.ru/employer/49357;Москва;
+135;hh.ru;;;;Data Scientist в Марусю (Voice Recognition);https://spb.hh.ru/vacancy/37674162?query=data%20scientist; Mail.ru Group;https://hh.ru/employer/15478;Москва;
+136;hh.ru;;;;Data scientist (Центр валидации моделей КИБ);https://spb.hh.ru/vacancy/38327400?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+137;hh.ru;;;;Data Scientist на проекты по анализу текстов и новостей;https://spb.hh.ru/vacancy/38071205?query=data%20scientist; Банк ВТБ (ПАО);https://hh.ru/employer/4181;Москва;
+138;hh.ru;;130000;;Senior Data Scientist (обработка текстов, машинное обучение), г. Сочи;https://spb.hh.ru/vacancy/38157808?query=data%20scientist; ГК «ВИЗАВИ Консалт»;https://hh.ru/employer/1326;Москва;руб.
+139;hh.ru;;;;Аналитик/Data Scientist;https://spb.hh.ru/vacancy/38543681?query=data%20scientist;ООО Инновационная мобильность;https://hh.ru/employer/3308706;Москва;
+140;hh.ru;;;;Senior Data Scientist;https://spb.hh.ru/vacancy/38168624?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+141;hh.ru;;;;Руководитель направления дата аналитики/data science;https://spb.hh.ru/vacancy/38664924?query=data%20scientist; ABCstaff;https://hh.ru/employer/3544865;Москва;
+142;hh.ru;;;;Аналитик / Data Scientist;https://spb.hh.ru/vacancy/38602231?query=data%20scientist;ООО КНС ГРУПП;https://hh.ru/employer/1993194;Москва, Краснопресненская и еще 1 ;
+143;hh.ru;;;;Senior data scientist;https://spb.hh.ru/vacancy/37601041?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+144;hh.ru;;;;Data scientist (Центр валидации моделей банковской и торговой книги);https://spb.hh.ru/vacancy/38319280?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва, Кутузовская и еще 1 ;
+145;hh.ru;;;;Data Scientist;https://spb.hh.ru/vacancy/38576353?query=data%20scientist; MAXIMUM EDUCATION;https://hh.ru/employer/1159470;Москва, Курская;
+146;hh.ru;;;;Senior data scientist;https://spb.hh.ru/vacancy/38487983?query=data%20scientist; Eqvanta;https://hh.ru/employer/3785152;Москва;
+147;hh.ru;;;;Data scientist (Центр валидации моделей розничного бизнеса);https://spb.hh.ru/vacancy/38307238?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва, Кутузовская и еще 1 ;
+148;hh.ru;;;;Data Scientist (Middle/Senior) - моделирование кредитных рисков корпоративных клиентов (Блок Риски);https://spb.hh.ru/vacancy/33462158?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+149;hh.ru;;;;Senior Data Scientist в команду «Департамента Маркетинга и Коммуникаций»;https://spb.hh.ru/vacancy/38646827?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+150;hh.ru;;;;Senior Data Scientist в команду Retail FX;https://spb.hh.ru/vacancy/38343485?query=data%20scientist; Райффайзенбанк;https://hh.ru/employer/4023;Москва, Технопарк;
+151;hh.ru;;;;Lead Data Scientist управления финансовых моделей (Big data);https://spb.hh.ru/vacancy/37688243?query=data%20scientist; Банк ВТБ (ПАО);https://hh.ru/employer/4181;Москва;
+152;hh.ru;;;;Главный риск-аналитик Data Scientist (Дирекция рисков);https://spb.hh.ru/vacancy/38601663?query=data%20scientist;ПАО Промсвязьбанк;https://hh.ru/employer/6591;Москва, Павелецкая;
+153;hh.ru;;;;Senior Data Scientist/Lead Data Scientist;https://spb.hh.ru/vacancy/38455032?query=data%20scientist; Группа компаний SRG;https://hh.ru/employer/39563;Москва, Электрозаводская;
+154;hh.ru;;;;Senior Data Scientist;https://spb.hh.ru/vacancy/38621236?query=data%20scientist; Rambler Group;https://hh.ru/employer/8620;Москва, Тульская;
+155;hh.ru;;;;Big data developer/data engineer (middle/senior);https://spb.hh.ru/vacancy/36426931?query=data%20scientist;ООО Ростелеком Информационные Технологии;https://hh.ru/employer/3144945;Москва, Новокузнецкая;
+156;hh.ru;;;;Team Lead data scientist (коммерческое направление);https://spb.hh.ru/vacancy/38004748?query=data%20scientist;ПАО МегаФон, IT;https://hh.ru/employer/3127?dpt=mgfn-3127-it;Москва, Маяковская и еще 2 ;
+157;hh.ru;;40000;;Младший аналитик данных (junior data scientist);https://spb.hh.ru/vacancy/39016271?query=data%20scientist;ООО СРМ Солюшнс;https://hh.ru/employer/2700550;Москва;руб.
+158;hh.ru;;;;Data Scientist;https://spb.hh.ru/vacancy/37559909?query=data%20scientist; Тинькофф;https://hh.ru/employer/78638;Москва;
+159;hh.ru;;;;Младший специалист Data Scientist;https://spb.hh.ru/vacancy/38852806?query=data%20scientist; Северсталь. ИТ Компания;https://hh.ru/employer/6041?dpt=severstal-6041-it;Москва;
+160;hh.ru;;;;Стажер data scientist;https://spb.hh.ru/vacancy/38502536?query=data%20scientist; Сибур;https://hh.ru/employer/3809?dpt=sbr-3809-sibb;Москва;
+161;hh.ru;;;;Senior Data Engineer;https://spb.hh.ru/vacancy/37637853?query=data%20scientist; PROFI.RU;https://hh.ru/employer/83639;Москва, Аэропорт;
+162;hh.ru;;;;Middle / Senior Data Science;https://spb.hh.ru/vacancy/39032369?query=data%20scientist; Северсталь. Управляющая компания;https://hh.ru/employer/6041?dpt=severstal-6041-MAIN;Москва;
+163;hh.ru;;;;Technical Lead в Data Science-команду/ML Engineer;https://spb.hh.ru/vacancy/38175082?query=data%20scientist; «РОСБАНК, Societe Generale Group», с опытом работы;https://hh.ru/employer/599?dpt=rosbank-599-opyt;Москва;
+164;hh.ru;;;;Big Data Project Manager;https://spb.hh.ru/vacancy/36308716?query=data%20scientist; mfms°;https://hh.ru/employer/543454;Москва, Автозаводская;
+165;hh.ru;;;;Data Engineer;https://spb.hh.ru/vacancy/38324558?query=data%20scientist; Циан;https://hh.ru/employer/1429999;Москва, Преображенская площадь;
+166;hh.ru;;;;DATA ENGINEER;https://spb.hh.ru/vacancy/38612259?query=data%20scientist; Сибур;https://hh.ru/employer/3809?dpt=sbr-3809-sibb;Москва;
+167;hh.ru;;;;Data Science Team Lead (прогнозирование спроса);https://spb.hh.ru/vacancy/38575590?query=data%20scientist; Ozon Информационные технологии;https://hh.ru/employer/2180?dpt=ozonru-2180-dev;Москва;
+168;hh.ru;;;;Старший менеджер продукта (направление Big Data - Telecom);https://spb.hh.ru/vacancy/39036040?query=data%20scientist; Билайн;https://hh.ru/employer/4934?dpt=bil-4934-beel;Москва;
+169;hh.ru;;;;Руководитель группы Data инженеров (Chief Data Engineer);https://spb.hh.ru/vacancy/38763322?query=data%20scientist; Лента, федеральная розничная сеть, IT ;https://hh.ru/employer/7172?dpt=7172-7172-it;Москва;
+170;hh.ru;;;;Программист Python (Senior);https://spb.hh.ru/vacancy/38576811?query=data%20scientist;ООО РАБЛЗ;https://hh.ru/employer/2223982;Москва;
+171;hh.ru;;250000;;Программист Python (Middle);https://spb.hh.ru/vacancy/38566344?query=data%20scientist;ООО РАБЛЗ;https://hh.ru/employer/2223982;Москва;руб.
+172;hh.ru;150000;250000;;Начальник отдела маркетинга;https://spb.hh.ru/vacancy/38686935?query=data%20scientist; Asgardia;https://hh.ru/employer/4835670;Москва;руб.
+173;hh.ru;;;;Data-инженер в команду Data Lake;https://spb.hh.ru/vacancy/38959427?query=data%20scientist; Райффайзенбанк;https://hh.ru/employer/4023;Москва, Технопарк;
+174;hh.ru;;350000;;Search Engineer;https://spb.hh.ru/vacancy/38364405?query=data%20scientist; Звук;https://hh.ru/employer/1829949;Москва, Комсомольская и еще 2 ;руб.
+175;hh.ru;;;;Руководитель офиса по управлению и работе с данными;https://spb.hh.ru/vacancy/38983788?query=data%20scientist; Российский Футбольный Союз;https://hh.ru/employer/553340;Москва;
+176;hh.ru;;;;Data Engineer в команду HR;https://spb.hh.ru/vacancy/38435608?query=data%20scientist; Райффайзенбанк;https://hh.ru/employer/4023;Москва, Технопарк;
+177;hh.ru;;;;AI Research Engineer;https://spb.hh.ru/vacancy/38927991?query=data%20scientist; Coleman Services;https://hh.ru/employer/124;Москва;
+178;hh.ru;;;;ИТ-тренер - преподаватель Data Analytics;https://spb.hh.ru/vacancy/38878229?query=data%20scientist; Университет Иннополис;https://hh.ru/employer/1160188;Москва;
+179;hh.ru;;;;Scala developer;https://spb.hh.ru/vacancy/38700865?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва, Верхние Котлы и еще 1 ;
+180;hh.ru;;;;DS Teamlead на голосовые сервисы;https://spb.hh.ru/vacancy/37247151?query=data%20scientist; Тинькофф;https://hh.ru/employer/78638;Москва, Водный стадион;
+181;hh.ru;;290000;;Senior Data Engineer / Ведущий инженер данных;https://spb.hh.ru/vacancy/37167337?query=data%20scientist;ООО UMA.Tech;https://hh.ru/employer/2155808?dpt=2155808-2155808-uma;Москва, Маяковская;руб.
+182;hh.ru;;;;Business Analyst;https://spb.hh.ru/vacancy/38782084?query=data%20scientist;ООО Перфект Арт;https://hh.ru/employer/2618793;Москва;
+183;hh.ru;;;;Андеррайтер;https://spb.hh.ru/vacancy/38824329?query=data%20scientist; Mafin;https://hh.ru/employer/3759471;Москва, Автозаводская;
+184;hh.ru;;250000;;Ведущий инженер по тестированию;https://spb.hh.ru/vacancy/36057559?query=data%20scientist;ООО UMA.Tech;https://hh.ru/employer/2155808?dpt=2155808-2155808-uma;Москва;руб.
+185;hh.ru;;;;Software Engineer;https://spb.hh.ru/vacancy/38766258?query=data%20scientist;ООО IHS Global;https://hh.ru/employer/841087;Москва;
+186;hh.ru;;;;Менеджер по работе с партнёрами в Яндекс.Практикум;https://spb.hh.ru/vacancy/38802001?query=data%20scientist; Яндекс;https://hh.ru/employer/1740;Москва;
+187;hh.ru;;;;Senior Product Owner;https://spb.hh.ru/vacancy/38133585?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+188;hh.ru;;;;Системный аналитик (ETL/DWH);https://spb.hh.ru/vacancy/38713812?query=data%20scientist; Техносерв Консалтинг;https://hh.ru/employer/1060266;Москва, Автозаводская;
+189;hh.ru;;;;Product Manager (Datalore);https://spb.hh.ru/vacancy/37314234?query=data%20scientist; JetBrains;https://hh.ru/employer/9281;Москва;
+190;hh.ru;;;;Руководитель направления по развитию клиентского опыта (массовый высокодоходный сегмент);https://spb.hh.ru/vacancy/38758687?query=data%20scientist; Сбербанк для экспертов;https://hh.ru/employer/3529?dpt=3529-3529-prof;Москва;
+191;hh.ru;;;;Data Scientist на проекты по созданию графа связанности юридических лиц;https://spb.hh.ru/vacancy/38071218?query=data%20scientist; Банк ВТБ (ПАО);https://hh.ru/employer/4181;Москва;
+192;hh.ru;;;;Senior recruiter;https://spb.hh.ru/vacancy/38283298?query=data%20scientist; Prequel;https://hh.ru/employer/3297595;Москва;
+193;hh.ru;;;;Бизнес-аналитик (Big Data);https://spb.hh.ru/vacancy/38512230?query=data%20scientist;ПАО МегаФон, IT;https://hh.ru/employer/3127?dpt=mgfn-3127-it;Москва, Маяковская и еще 2 ;
+194;hh.ru;;;;Scala разработчик;https://spb.hh.ru/vacancy/38587043?query=data%20scientist; ANCOR FinTech;https://hh.ru/employer/1947330;Москва;
+195;hh.ru;;;;Account Manager/Project Manager;https://spb.hh.ru/vacancy/38562155?query=data%20scientist; SegmentStream;https://hh.ru/employer/1564038;Москва;
+196;hh.ru;;;;Marketing Manager (B2B/SaaS);https://spb.hh.ru/vacancy/38562142?query=data%20scientist; SegmentStream;https://hh.ru/employer/1564038;Москва;
+197;hh.ru;;;;Frontend developer;https://spb.hh.ru/vacancy/37908792?query=data%20scientist; The Skolkovo Institute of Science and Technology;https://hh.ru/employer/976931;Москва, Славянский бульвар;
+198;hh.ru;;;;IT Researcher \ IT Sourcing Manager;https://spb.hh.ru/vacancy/38524863?query=data%20scientist;ООО Mountain Ridge;https://hh.ru/employer/3030439;Москва, Проспект Мира;
+199;superjob.ru;120000;150000;;Data Scientist;https://russia.superjob.ru/vakansii/data-scientist-34345797.html;КИБЕРБОРЕЯ;https://russia.superjob.ru/clients/kiberboreya-3919195.html;Москва;руб.
+200;superjob.ru;130000;;;Программист / Разработчик 1С;https://russia.superjob.ru/vakansii/programmist-34308964.html;7ЦВЕТОВ и 7ЦВЕТОВ Декор;https://russia.superjob.ru/clients/7cvetov-i-7cvetov-dekor-79281.html;Москва, Молодежная;руб.
+201;superjob.ru;130000;;;Программист 1С;https://russia.superjob.ru/vakansii/programmist-1s-34380213.html;7ЦВЕТОВ и 7ЦВЕТОВ Декор;https://russia.superjob.ru/clients/7cvetov-i-7cvetov-dekor-79281.html;Москва;руб.

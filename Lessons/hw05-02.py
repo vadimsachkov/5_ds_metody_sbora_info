@@ -135,6 +135,7 @@ def onlinetrade(goods):
                 #a_good = li_good.find_element_by_xpath('.//a[@class="indexGoods__item__image"]')
                 good['link'] = li_good.find_element_by_xpath('.//a[@class="indexGoods__item__image"]').get_attribute('href')
                 # так как товары скрыты то text silenium не показывает. Но мы же хитрожопые - достаем имя товара и цену   через скрипт
+                #https://yizeng.me/2014/04/08/get-text-from-hidden-elements-using-selenium-webdriver/
                 good['name'] = driver.execute_script("return arguments[0].innerHTML", li_good.find_element_by_xpath('.//a[@class="indexGoods__item__name"]'))
  #               good['price'] = li_good.find_element_by_xpath('.//span[contains(@class,"price")]').text
                 good['price'] = driver.execute_script("return arguments[0].innerHTML", li_good.find_element_by_xpath('.//span[contains(@class,"price")]'))
