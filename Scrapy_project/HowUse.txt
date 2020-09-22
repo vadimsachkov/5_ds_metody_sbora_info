@@ -23,3 +23,55 @@
 
     -- устанавливаем кол-во запросов в секунду 16,  чтобы сильно не загружать сервер
         CONCURRENT_REQUESTS = 16
+
+
+# создал pull request автору библиотеки
+# https://github.com/borntyping/python-colorlog/pulls
+# Изменить немного код библиотеки colorlog чтобы была возможность использовать не 8 цветов а 256
+# подправить файл \venv\Lib\site-packages\colorlog\escape_codes.py
+№ примерно 55 строчку начиная:  for prefix, prefix_name in PREFIXES:
+for prefix, prefix_name in PREFIXES:
+    #for code, name in enumerate(COLORS):
+    # Create a 256-color dictionary. Use  as example:  'INFO': 'bg_bold_c12',
+    # where the 'c' character is just a prefix (abbreviated from color) and 12 is a number from 0 to 255
+    # log_colors={
+    #    'DEBUG': 'blue',
+    #    'INFO': 'bold_c12',
+    #    'WARNING': 'c240',
+    #    'ERROR': 'bg_bold_c48',
+    #    'CRITICAL': 'red,bg_c0',
+    # }
+    colors256 = {f'8;5;{i}': f'c{i}' for i in range(255)}
+    colors256.update(enumerate(COLORS))
+    for code, name in colors256.items():
+        escape_codes[prefix_name + name] = esc(prefix + str(code))
+
+
+
+----------------------------------
+Цветной лог
+https://en.wikipedia.org/wiki/ANSI_escape_code#24-bit
+256-color mode — foreground: ESC[38;5;#m   background: ESC[48;5;#m
+
+ESC[ 38;5;⟨n⟩ m Select foreground color
+ESC[ 48;5;⟨n⟩ m Select background color
+  0-  7:  standard colors (as in ESC [ 30–37 m)
+  8- 15:  high intensity colors (as in ESC [ 90–97 m)
+ 16-231:  6 × 6 × 6 cube (216 colors): 16 + 36 × r + 6 × g + b (0 ≤ r, g, b ≤ 5)
+232-255:  grayscale from black to white in 24 steps
+
+
+# пример. инициализация и распечатка цветным
+from colorama import init, Fore, Style
+init()
+print('\033[38;5;208m' + 'some оранжевый text')  # f kexit dvtcnj
+print('\033[38;5;5m' + 'some red text')
+RESET = '\033[0m'  # mode 0  = reset
+print(CLEAR_SCREEN + RED + 'Welcome!' + RESET)
+
+# примеры
+# Now regular ANSI codes should work, even in Windows
+CLEAR_SCREEN = '\033[2J'
+RED = '\033[31m'   # mode 31 = red forground
+RESET = '\033[0m'  # mode 0  = reset
+print(CLEAR_SCREEN + RED + 'Welcome!' + RESET)

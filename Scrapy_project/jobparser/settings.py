@@ -25,13 +25,14 @@ color_formatter = ColoredFormatter(
     (
         '%(log_color)s%(levelname)-5s%(reset)s '
         '%(yellow)s[%(asctime)s]%(reset)s'
-        '%(white)s %(name)s %(funcName)s %(bold_purple)s:%(lineno)d%(reset)s '
+        '%(thin_c236)s %(name)s %(funcName)s %(bold_purple)s:%(lineno)d%(reset)s '
         '%(log_color)s%(message)s%(reset)s'
     ),
     datefmt='%y-%m-%d %H:%M:%S',
+    # цвета брать  из раздела 8-bit  в формате с№  , с -это латинская буква с (сокращенно от color) где № число от 0 до 255   https://en.wikipedia.org/wiki/ANSI_escape_code#24-bit
     log_colors={
         'DEBUG': 'blue',
-        'INFO': 'bold_cyan',
+        'INFO': 'bold_c25',
         'WARNING': 'red',
         'ERROR': 'bg_bold_red',
         'CRITICAL': 'red,bg_white',
