@@ -1,0 +1,152 @@
+﻿0. чтобы автоматически  установились все библиотеки нужно создать файл requirements.txt например в корне проекта
+	и вписать туда все нужные библиотеки:
+	requests~=2.24.0
+	requests~=2.24.0
+	pandas~=1.1.2
+	bs4~=0.0.1
+	beautifulsoup4~=4.9.1
+	pymongo~=3.11.0
+	lxml~=4.5.2
+	selenium~=3.141.0
+	Scrapy~=2.3.0
+	itemadapter~=0.1.0
+	colorlog~=4.2.1
+0.1.  в настроках проекта /Settings/Tools/Python Integrated Tools   в поле  Package Requirements file вписать путь до созданного файла requirements.txt
+0.2.	чтобы начались устанавливаться библитеки в главном меню выбрать Tools/Sync Python Requirements/  и запустить
+
+
+
+1. scrapy startproject jobparser .
+    поставить точку в конце чтобы проект собрался в папке jobparser
+
+    создаться подпапка ./jobparser где и будет проект
+
+2. переписать файлы с урока в созданную подпапку ./jobparser
+
+3. создаем паука
+    scrapy genspider hhru hh.ru
+        где hhru имя паука, hh.ru   сайта стартовый
+        создастся файл ./spiders/hhru.py   где и пропишутся  заданные выше параметры:
+
+        class HhruSpider(scrapy.Spider):
+        name = 'hhru'
+        allowed_domains = ['hh.ru']
+4. настраиваем settings.py
+    -- вписываем юзер агента из браузера: chrome://version
+    USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36'
+
+    -- отключаем ROBOTSTXT_OBEY = False
+        так как роботы в данное время мало используются
+
+    -- устанавливаем кол-во запросов в секунду 16,  чтобы сильно не загружать сервер
+        CONCURRENT_REQUESTS = 16
+
+    -- для того чтобы сохранялись картинки вставляем параметр, иначе scrapy смолчит и не сохранит
+        IMAGES_STORE = 'images'    #!!!!!!!!!!!!!!!!!!!!!!!!!
+
+    -- LOG_ENABLED = True
+        LOG_LEVEL = 'DEBUG'
+
+
+
+-- создаем runner.py
+
+
+5. для подсdечивания логов другими цветами в ставить в runner.py
+    ------------------------------------------
+    # подсвечивание логов в консоли scrapy
+    # https://pypi.org/project/colorlog/
+    # ниженаписанный код  найден на https://stackoverflow.com/questions/42095184/scrapy-framework-colorize-logging
+    # соответствие индекса цвету смотреть https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit
+    # код подправлен для использования 256 цветов. см файл HowUse.txt
+    # вставить в settings.py
+    # pip install colorlog
+
+    import copy
+
+    from colorlog import ColoredFormatter
+    import scrapy.utils.log
+
+    color_formatter = ColoredFormatter(
+        (
+            '%(log_color)s%(levelname)-5s%(reset)s '
+            '%(c202)s[%(asctime)s]%(reset)s'
+            '%(thin_c236)s %(name)s %(funcName)s %(bold_purple)s:%(lineno)d%(reset)s '
+            '%(log_color)s%(message)s%(reset)s'
+        ),
+        datefmt='%y-%m-%d %H:%M:%S',
+        # цвета брать  из раздела 8-bit  в формате с№  , с -это латинская буква с (сокращенно от color) где № число от 0 до 255   https://en.wikipedia.org/wiki/ANSI_escape_code#24-bit
+        log_colors={
+            'DEBUG': 'blue',
+            'INFO': 'bold_c25',
+            'WARNING': 'red',
+            'ERROR': 'bg_bold_red',
+            'CRITICAL': 'red,bg_c244',
+        }
+    )
+
+    _get_handler = copy.copy(scrapy.utils.log._get_handler)
+
+    def _get_handler_custom(*args, **kwargs):
+        handler = _get_handler(*args, **kwargs)
+        handler.setFormatter(color_formatter)
+        return handler
+
+    scrapy.utils.log._get_handler = _get_handler_custom
+
+    #=========================================================
+
+
+6. немного правим файл библиотеки  python-colorlog  \venv\Lib\site-packages\colorlog\escape_codes.py
+
+# создал pull request автору библиотеки
+# https://github.com/borntyping/python-colorlog/pulls
+# соответствие индекса цвету смотреть https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit
+# Изменить немного код библиотеки colorlog чтобы была возможность использовать не 8 цветов а 256
+# подправить файл \venv\Lib\site-packages\colorlog\escape_codes.py
+# примерно 55 строчку начиная:  for prefix, prefix_name in PREFIXES:
+for prefix, prefix_name in PREFIXES:
+    #for code, name in enumerate(COLORS):
+    # Create a 256-color dictionary. Use  as example:  'INFO': 'bg_bold_c12',
+    # where the 'c' character is just a prefix (abbreviated from color) and 12 is a number from 0 to 255
+    # log_colors={
+    #    'DEBUG': 'blue',
+    #    'INFO': 'bold_c12',
+    #    'WARNING': 'c240',
+    #    'ERROR': 'bg_bold_c48',
+    #    'CRITICAL': 'red,bg_c0',
+    # }
+    colors256 = {f'8;5;{i}': f'c{i}' for i in range(255)}
+    colors256.update(enumerate(COLORS))
+    for code, name in colors256.items():
+        escape_codes[prefix_name + name] = esc(prefix + str(code))
+
+
+
+----------------------------------
+Цветной лог
+https://en.wikipedia.org/wiki/ANSI_escape_code#24-bit
+256-color mode — foreground: ESC[38;5;#m   background: ESC[48;5;#m
+
+ESC[ 38;5;⟨n⟩ m Select foreground color
+ESC[ 48;5;⟨n⟩ m Select background color
+  0-  7:  standard colors (as in ESC [ 30–37 m)
+  8- 15:  high intensity colors (as in ESC [ 90–97 m)
+ 16-231:  6 × 6 × 6 cube (216 colors): 16 + 36 × r + 6 × g + b (0 ≤ r, g, b ≤ 5)
+232-255:  grayscale from black to white in 24 steps
+
+
+# пример. инициализация и распечатка цветным
+from colorama import init, Fore, Style
+init()
+print('\033[38;5;208m' + 'some оранжевый text')  # f kexit dvtcnj
+print('\033[38;5;5m' + 'some red text')
+RESET = '\033[0m'  # mode 0  = reset
+print(CLEAR_SCREEN + RED + 'Welcome!' + RESET)
+
+# примеры
+# Now regular ANSI codes should work, even in Windows
+CLEAR_SCREEN = '\033[2J'
+RED = '\033[31m'   # mode 31 = red forground
+RESET = '\033[0m'  # mode 0  = reset
+print(CLEAR_SCREEN + RED + 'Welcome!' + RESET)
