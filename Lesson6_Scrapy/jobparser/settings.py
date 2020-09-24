@@ -13,6 +13,8 @@
 # подсвечивание логов в консоли scrapy
 # https://pypi.org/project/colorlog/
 # ниженаписанный код  найден на https://stackoverflow.com/questions/42095184/scrapy-framework-colorize-logging
+# соответствие индекса цвету смотреть https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit
+# код подправлен для использования 256 цветов. см файл HowUse.txt
 # вставить в settings.py
 # pip install colorlog
 
@@ -24,7 +26,7 @@ import scrapy.utils.log
 color_formatter = ColoredFormatter(
     (
         '%(log_color)s%(levelname)-5s%(reset)s '
-        '%(yellow)s[%(asctime)s]%(reset)s'
+        '%(c202)s[%(asctime)s]%(reset)s'
         '%(thin_c236)s %(name)s %(funcName)s %(bold_purple)s:%(lineno)d%(reset)s '
         '%(log_color)s%(message)s%(reset)s'
     ),
@@ -35,7 +37,7 @@ color_formatter = ColoredFormatter(
         'INFO': 'bold_c25',
         'WARNING': 'red',
         'ERROR': 'bg_bold_red',
-        'CRITICAL': 'red,bg_white',
+        'CRITICAL': 'red,bg_c244',
     }
 )
 

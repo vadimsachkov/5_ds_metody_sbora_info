@@ -27,6 +27,7 @@
 
 # создал pull request автору библиотеки
 # https://github.com/borntyping/python-colorlog/pulls
+# соответствие индекса цвету смотреть https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit
 # Изменить немного код библиотеки colorlog чтобы была возможность использовать не 8 цветов а 256
 # подправить файл \venv\Lib\site-packages\colorlog\escape_codes.py
 № примерно 55 строчку начиная:  for prefix, prefix_name in PREFIXES:
