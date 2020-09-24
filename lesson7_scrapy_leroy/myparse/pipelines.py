@@ -34,7 +34,8 @@ class LeroyPhotosPipeline(ImagesPipeline):
             for img in item['photos']:
                 try:
                     # сохранякем в словаре dictphotos путь до картинки как ключ, а значение артикул товара, к которому относится картинка
-                    # интересно а если картинка будет принадлежать разным  товарам, тогда что? жопа наверно
+                    # интересно а если картинка будет принадлежать разным  товарам, тогда что? просто перезапишет
+                    # хотел заморочиться хешем  типа image_guid = hashlib.sha1(to_bytes(request.url)).hexdigest() , но мне кажется это лишнее сейчас - путь нагляднеее
                     self.dictphotos[img]=item['article']
                     yield scrapy.Request(img)
                 except Exception as e:
@@ -42,9 +43,11 @@ class LeroyPhotosPipeline(ImagesPipeline):
 
     def file_path(self, request, response=None, info=None):
         if request.url in self.dictphotos:
+            # в лерой сам путь к картинке вроде хранит артикул - но вдруг они что то поменяют и тогда облом
+            # создаем более универсальный вариант. Хотя мне он не очень нравится. но пока лучше не нашел.....
             # достаем ранее сохранненый артикул товара из словаря  dictphotos по ключу - href картинки
             targetfile = self.dictphotos[request.url] +'/' + request.url.split('/')[-1]
-            del self.dictphotos[request.url] # удаляю эелемент словаря -он уже не нужен (оставлять не хочется, чтобы память не мусорить)
+            # del self.dictphotos[request.url] # удаляю эелемент словаря -он уже не нужен (оставлять не хочется, чтобы память не мусорить)
         else:
             targetfile=ImagesPipeline.file_path(self,request,response,info)
         # targetfile = request.url.split('/')[-1]
