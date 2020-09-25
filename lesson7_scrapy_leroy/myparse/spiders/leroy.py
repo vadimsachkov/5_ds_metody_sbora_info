@@ -19,6 +19,11 @@ class LeroySpider(scrapy.Spider):
         for link in good_links:
             yield response.follow(link, callback=self.parse_good)
 
+        next_page = response.css("a[rel='next']::attr(href)").extract_first()
+        if next_page:
+            yield response.follow(next_page, callback=self.parse)
+
+
     def parse_good(self, response:HtmlResponse):
 
         loader = ItemLoader(item=MyparseItem(),response = response)
@@ -28,4 +33,5 @@ class LeroySpider(scrapy.Spider):
         loader.add_xpath('article', '//uc-pdp-card-ga-enriched/@data-product-id')
         loader.add_xpath('price', '//uc-pdp-card-ga-enriched//span[@slot="price"]/text()')
         loader.add_xpath('currency', '//uc-pdp-card-ga-enriched//span[@slot="currency"]/text()')
+        loader.add_xpath('characteristics', '//dl[@class="def-list"]')
         yield loader.load_item()

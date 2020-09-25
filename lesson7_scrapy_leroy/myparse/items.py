@@ -6,6 +6,7 @@
 import scrapy
 from scrapy.loader.processors import MapCompose, TakeFirst
 from itemloaders.processors import MapCompose, TakeFirst
+from scrapy import Selector
 
 def refactor_link(value):
     if value:
@@ -23,6 +24,19 @@ def correct_currency(value):
     else:
         return value
 
+def characteristics_parse(value):
+    print(value)
+    ch_dict={}
+    sel=Selector(text=value[0])
+    for ch1 in sel.xpath('//div[@class="def-list__group"]'):
+        try:
+            ch_dict[ch1.xpath('.//dt[@class="def-list__term"]/text()').extract_first()] = \
+                ch1.xpath('.//dd[@class="def-list__definition"]/text()').extract_first().strip()
+        except:
+            pass
+    return ch_dict
+
+
 
 class MyparseItem(scrapy.Item):
     # define the fields for your item here like:
@@ -35,7 +49,7 @@ class MyparseItem(scrapy.Item):
     price = scrapy.Field(input_processor = MapCompose(correct_price),output_processor=TakeFirst())
     currency=scrapy.Field(input_processor = MapCompose(correct_currency),output_processor=TakeFirst())
     description= scrapy.Field()
-    characteristics= scrapy.Field()
+    characteristics= scrapy.Field(input_processor = characteristics_parse,output_processor=TakeFirst())
     image_paths = scrapy.Field()
     _id = scrapy.Field()  # это поле число для mongo который не может впихнуть _id в объект item
     pass

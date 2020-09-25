@@ -33,24 +33,20 @@ class LeroyPhotosPipeline(ImagesPipeline):
 
             for img in item['photos']:
                 try:
-                    # сохранякем в словаре dictphotos путь до картинки как ключ, а значение артикул товара, к которому относится картинка
-                    # интересно а если картинка будет принадлежать разным  товарам, тогда что? просто перезапишет
-                    # хотел заморочиться хешем  типа image_guid = hashlib.sha1(to_bytes(request.url)).hexdigest() , но мне кажется это лишнее сейчас - путь нагляднеее
-                    self.dictphotos[img]=item['article']
-                    yield scrapy.Request(img)
+                    # всталяем артикул как дополнительное значение в поле  meta запроса в виде словаря в виде  {<имяПаука>_article : <артукул_товара>} напрмиер {leroy_article:'13324266'}
+                    yield scrapy.Request(img, meta={self.get_article_meta(info):item['article']})
                 except Exception as e:
                     print(e)
 
     def file_path(self, request, response=None, info=None):
-        if request.url in self.dictphotos:
+        # проверяем поле , встравленно специльно чтобы хранить артикул в meta запроса
+        if self.get_article_meta(info) in request.meta:
             # в лерой сам путь к картинке вроде хранит артикул - но вдруг они что то поменяют и тогда облом
             # создаем более универсальный вариант. Хотя мне он не очень нравится. но пока лучше не нашел.....
-            # достаем ранее сохранненый артикул товара из словаря  dictphotos по ключу - href картинки
-            targetfile = self.dictphotos[request.url] +'/' + request.url.split('/')[-1]
-            # del self.dictphotos[request.url] # удаляю эелемент словаря -он уже не нужен (оставлять не хочется, чтобы память не мусорить)
+            # сохраняем картики в папке  <артикулТовара>/<исходноеИмяКартинки>
+            targetfile = request.meta[self.get_article_meta(info)] +'/' + request.url.split('/')[-1]
         else:
             targetfile=ImagesPipeline.file_path(self,request,response,info)
-        # targetfile = request.url.split('/')[-1]
         return targetfile
 
     def item_completed(self, results, item, info):
@@ -64,4 +60,6 @@ class LeroyPhotosPipeline(ImagesPipeline):
         adapter = ItemAdapter(item)
         adapter['image_paths'] = image_paths
         return item
-
+    # генерируем строку для meta поля в запросе
+    def get_article_meta(self, info=None):
+        return  (info.spider.name if info.spider.name else 'noname') + '_article'
