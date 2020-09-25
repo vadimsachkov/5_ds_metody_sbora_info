@@ -22,7 +22,8 @@ class MyparsePipeline:
     def process_item(self, item, spider):
         collection = self.mongo_base[spider.name]
         # doc = dict(item)
-        collection.insert_one(item)
+        if collection.find({'article':item['article']}).count() ==0:
+            collection.insert_one(item)
         return item
 
 
