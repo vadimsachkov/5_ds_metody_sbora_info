@@ -14,7 +14,7 @@ def refactor_link(value):
 
 def correct_price(value):
     try:
-        return float(value)
+        return float(value.replace(" ", ""))
     except:
         return  0
 

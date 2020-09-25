@@ -70,9 +70,12 @@ if __name__ == '__main__':
 
     crawler_settings = Settings()
     crawler_settings.setmodule(settings)
-    # answer = input('Введите поисковый запрос')
-    answer='краска'
-    process = CrawlerProcess(settings=crawler_settings)
-    process.crawl(LeroySpider,params=[answer])
+    answer = input('Введите поисковый запрос (для выхода ничего не вводите):  ')
+    if answer:
+    #answer='краска'
+        process = CrawlerProcess(settings=crawler_settings)
+        process.crawl(LeroySpider,params=[answer])
 
-    process.start()
+        process.start()
+    else:
+        print("Ну не хотите , как хотите. Досвидос")
