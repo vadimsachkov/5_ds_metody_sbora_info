@@ -28,8 +28,10 @@ def characteristics_parse(value):
     print(value)
     ch_dict={}
     sel=Selector(text=value[0])
+    # value[0] содержит  весь html блок c характеристиками
     for ch1 in sel.xpath('//div[@class="def-list__group"]'):
         try:
+            # парсим из характеристики названеи и значение
             ch_dict[ch1.xpath('.//dt[@class="def-list__term"]/text()').extract_first()] = \
                 ch1.xpath('.//dd[@class="def-list__definition"]/text()').extract_first().strip()
         except:
