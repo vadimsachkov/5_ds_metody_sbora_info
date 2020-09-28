@@ -12,6 +12,7 @@ from scrapy.pipelines.images import ImagesPipeline
 from itemadapter import ItemAdapter
 from scrapy.exceptions import DropItem
 from pprint import pprint
+from scrapy import Selector
 
 
 class MyparsePipeline:
@@ -25,6 +26,45 @@ class MyparsePipeline:
         if collection.find({'article':item['article']}).count() ==0:
             collection.insert_one(item)
         return item
+
+
+# обрабатывает характеристики товара и с охраняет их в словаре
+
+class CorrectPipeline:
+
+    def process_item(self, item, spider):
+        # обработка харакетиристик товара
+        try:
+            ch_dict = {}
+            sel = Selector(text=item["characteristics"])
+            # value[0] содержит  весь html блок c характеристиками
+            for ch1 in sel.xpath('//div[@class="def-list__group"]'):
+                try:
+                    # парсим из характеристики названеи и значение
+                    ch_dict[ch1.xpath('.//dt[@class="def-list__term"]/text()').extract_first()] = \
+                        ch1.xpath('.//dd[@class="def-list__definition"]/text()').extract_first().strip()
+                except:
+                    pass
+            item["characteristics"]=ch_dict
+        except:
+            pass
+        # обработка цена товара - в тип float
+        try:
+            item['price']= float(item['price'].replace(" ", ""))
+        except:
+            item['price']= None  # Если цена ошибочна
+
+        # обработка валюты
+        try:
+            item['currency']= "руб." if item['currency']== "₽" else item['currency']
+        except:
+            item['currency']= None  # Если какая то непонятная пока  ошибка
+
+        return item
+
+
+
+
 
 
 class LeroyPhotosPipeline(ImagesPipeline):

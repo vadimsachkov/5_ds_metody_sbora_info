@@ -29,8 +29,9 @@ ItemLoader следующие данные:
 # код подправлен для использования 256 цветов. см файл HowUse.txt
 # вставить в settings.py
 # pip install colorlog
-
-import copy
+#
+# код закоментирован чтобы исполнялся без ошибок в случает если не сделан патч библиотеки colorlog . см HowUse.txt пункт 6
+'''import copy
 
 from colorlog import ColoredFormatter
 import scrapy.utils.log
@@ -61,7 +62,7 @@ def _get_handler_custom(*args, **kwargs):
     return handler
 
 scrapy.utils.log._get_handler = _get_handler_custom
-
+'''
 #=========================================================
 
 

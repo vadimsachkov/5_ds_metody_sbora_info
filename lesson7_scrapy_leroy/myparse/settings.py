@@ -70,7 +70,8 @@ CONCURRENT_REQUESTS = 32
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    'myparse.pipelines.MyparsePipeline': 300,
-   'myparse.pipelines.LeroyPhotosPipeline':100
+   'myparse.pipelines.LeroyPhotosPipeline':100,
+   'myparse.pipelines.CorrectPipeline':200  # обработка содержимого поля характеристика товара
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
