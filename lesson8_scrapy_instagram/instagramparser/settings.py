@@ -1,4 +1,4 @@
-# Scrapy settings for myparse project
+# Scrapy settings for instagramparser project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,31 +7,27 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'myparse'
+BOT_NAME = 'instagramparser'
 
-SPIDER_MODULES = ['myparse.spiders']
-NEWSPIDER_MODULE = 'myparse.spiders'
+SPIDER_MODULES = ['instagramparser.spiders']
+NEWSPIDER_MODULE = 'instagramparser.spiders'
 
 IMAGES_STORE = 'images'    #!!!!!!!!!!!!!!!!!!!!!!!!!
-
-# автоматически создаеем мини картинки
-IMAGES_THUMBS={
-    'small':(50,50)
-}
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36'
 
+
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = False  # отключаем из-за не актуапльности
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS = 16
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY = 1.25
+#DOWNLOAD_DELAY = 3
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
@@ -51,13 +47,13 @@ DOWNLOAD_DELAY = 1.25
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'myparse.middlewares.MyparseSpiderMiddleware': 543,
+#    'instagramparser.middlewares.InstagramparserSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'myparse.middlewares.MyparseDownloaderMiddleware': 543,
+#    'instagramparser.middlewares.InstagramparserDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -69,23 +65,23 @@ DOWNLOAD_DELAY = 1.25
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'myparse.pipelines.MyparsePipeline': 300,
-   'myparse.pipelines.LeroyPhotosPipeline':100,
-   'myparse.pipelines.CorrectPipeline':200  # обработка содержимого поля характеристика товара
+   'instagramparser.pipelines.InstagramParserPipeline': 300,
+   'instagramparser.pipelines.MongoPipeline': 500     # ЗАПИСЬ В БАЗУ
+
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
-#AUTOTHROTTLE_ENABLED = True
+AUTOTHROTTLE_ENABLED = True
 # The initial download delay
-#AUTOTHROTTLE_START_DELAY = 5
+AUTOTHROTTLE_START_DELAY = 5
 # The maximum download delay to be set in case of high latencies
-#AUTOTHROTTLE_MAX_DELAY = 60
+AUTOTHROTTLE_MAX_DELAY = 60
 # The average number of requests Scrapy should be sending in parallel to
 # each remote server
-#AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
+AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
 # Enable showing throttling stats for every response received:
-#AUTOTHROTTLE_DEBUG = False
+AUTOTHROTTLE_DEBUG = True
 
 # Enable and configure HTTP caching (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
