@@ -24,7 +24,23 @@ class MongoPipeline:
     def process_item(self, item, spider):
         collection = self.mongo_base[spider.name]
         # doc = dict(item)
-        collection.insert_one(item)
-        # if collection.find({'article':item['article']}).count() ==0:
+        try:
+            if not collection.count_documents({"user_id": item['user_id']}):
+               # если не пользователя такого нет в базе то добавляем
+               collection.insert_one(item)
+            else:
+                if len(item['subscriptions'])>1:
+                    # это уже элемент  персоны (там все его подписки) - его заменяем полностью
+                    collection.replace_one({"user_id": item['user_id']}, item, upsert=True)
+                else:
+                # такой уже есть - добавляем  подписки
+                    if item['subscriptions'][0] is not None:
+                        doc=collection.find_one({"user_id": item['user_id']})
+                        subs=set(doc['subscriptions'] + item['subscriptions']) # объединяем подписки с базы и новые ,удаляя дубликаты
+                        subs.discard(None)
+                        collection.update({"user_id": item['user_id']}, {"$set":{'subscriptions':list(subs)}}, upsert=True)
+
+        except ValueError:
+            print(ValueError)
 
         return item
