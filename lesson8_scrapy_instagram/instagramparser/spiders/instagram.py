@@ -21,7 +21,9 @@ class InstagramSpider(scrapy.Spider):
     insta_login = 'insttest98'
     insta_pwd = '#PWD_INSTAGRAM_BROWSER:10:1601366430:AedQALcCk9Jy8MyLIQqj+VPgAlvoG3In1nXy+EFeZPW6JY94D2woPMM/zRZEy5YNGkPyS1Qh57R1+wqOOd1Tta/iJ7JdTnbQqNBWRb0dO88zQrffdn0A1yt2TEqjX7LT6aXpvEiq4F7on7xrpHAY'
     inst_login_link = 'https://www.instagram.com/accounts/login/ajax/'
-    parse_users = ['ostrov_salon','texaspizzeria', 'makcim123098']     #список пользователей, у которого собираем посты. Можно указать список
+    # список пользователей, у которого собираем посты. Можно указать список
+    parse_users = ['ostrov_salon','texaspizzeria', 'makcim123098']
+
 
     graphql_url = 'https://www.instagram.com/graphql/query/?'
     posts_hash1 = '18a7b935ab438c4514b1f742d8fa07a7'     #hash для получения данных по постах с главной страницы
@@ -58,7 +60,7 @@ class InstagramSpider(scrapy.Spider):
     def user_data_parse(self, response:HtmlResponse, person_name):
         person_id = self.fetch_person_id(response.text, person_name)       #Получаем id пользователя
         variables={"id":person_id,                                    #Формируем словарь для передачи даных в запрос
-                   "first":12}                                      #12 постов. Можно больше (макс. 50)
+                   "first":25}                                      #12 постов. Можно больше (макс. 50)
 
 
         # Сначала обходим подписчиков
@@ -172,6 +174,9 @@ class InstagramSpider(scrapy.Spider):
     #Получаем full_name желаемого пользователя
     def fetch_user_fullname(self, text, username):
         matched = re.search(
-            '{\"id\":\"\\d+\",\"username\":\"%s\"}' % username, text
+            '{\"full_name\":\"\\.+\",\"has_ar_effects\":}' , text
         ).group()
         return json.loads(matched).get('id')
+
+   # "full_name": "Doutzen Kroes", "has_ar_effects"
+   #re.search('{\"full_name\":\"\\.+\",\"has_ar_effects\":}' , response.text)

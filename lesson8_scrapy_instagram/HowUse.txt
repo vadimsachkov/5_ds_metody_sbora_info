@@ -210,4 +210,4 @@ Alternatively you can use virtualenvwrapper which provides the cpvirtualenv comm
         на самом деле instagram просто схавал запрос в виде (то чтj у него на видео на 1:38:28)
             'https://(www.instagram.com/graghgl/guery/?guery_hash=18a7b935ab43804514b1f742d8fa07a7&id=7709057810&first=50'
             вместо 'https://(www.instagram.com/graghgl/guery/?guery_hash=18a7b935ab43804514b1f742d8fa07a7&variables={"id":"770905781","first":"50"}'
-            а нужно было вместо   urlencode(variables) применить  str(variables) и оставить встроке запроса &variables=
+            а нужно было вместо   url_posts = f'{self.graphql_url}query_hash={self.subscription_hash}&variables=' + json.dumps(variables,separators=(',', ':'))

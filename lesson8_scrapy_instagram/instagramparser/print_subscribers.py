@@ -16,20 +16,34 @@ if username:
     if col.count_documents({"username":username}):
         # найден ищем его пидписки
         user_data=col.find_one({"username":username})
+
+        for user_id in user_data['subscriptions']:
+            # выводим список логинов пользоватлей подписок по его user_id
+            try:
+                if col.count_documents({"user_id":user_id}):
+                    # раскомментировать чтобы вывести все подписки
+                    #print (col.find_one({"user_id":user_id})['username'])
+                    pass
+                else:
+                    print(f"Не найден {user_id}")
+            except:
+                print(f"Ошибка {user_id}")
+
         print (f"Всего подписок {len(user_data['subscriptions'])}")
-        for subs_id in user_data['subscriptions']:
-            # выводим список id пользоватлей подписок
-            #print (subs_id)
-            pass
 
         # выводим подписчиков
         user_id=user_data['user_id']
+        # находим всех пользоватлей у кого в подписках стоит наш пользователь
         users_doc = col.find({"subscriptions": user_id})
+        for subs in users_doc:
+
+           pass
+           # выводим список id пользоватлей подписок
+           # раскомментировать чтобы вывести все подписчиков
+           #print (subs['username'])
+
         print(f'Всего подписчиков {col.count_documents({"subscriptions": user_id})}')
-        for subs_id in users_doc:
-            # выводим список id пользоватлей подписок
-           #print (subs_id['user_id'])
-            pass
+
     else:
         print(f'Пользоватли с логином {username} не найдены')
 

@@ -22,7 +22,7 @@ from instagramparser import settings
 # код подправлен для использования 256 цветов. см файл HowUse.txt
 # вставить в settings.py
 # pip install colorlog
-
+'''
 import copy
 
 from colorlog import ColoredFormatter
@@ -55,7 +55,7 @@ def _get_handler_custom(*args, **kwargs):
 
 scrapy.utils.log._get_handler = _get_handler_custom
 
-#=========================================================
+#========================================================='''
 
 
 
@@ -68,3 +68,6 @@ if __name__ == '__main__':
     process = CrawlerProcess(settings=crawler_settings)
     process.crawl(InstagramSpider)
     process.start()
+
+
+    # !!!!!!!!!!!!!!  ДЛЯ ВЫВОДА ПОЛДПИСЧИКОВ И ПОДПИСОК ЗАПУСТИТЬ print_subcribers.py
