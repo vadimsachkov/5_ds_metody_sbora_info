@@ -21,10 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9230b5d6-3206-4c1d-9df6-2a3c99890871" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HowUse.txt" beforeDir="false" afterPath="$PROJECT_DIR$/HowUse.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instagramparser/print_subscribers.py" beforeDir="false" afterPath="$PROJECT_DIR$/instagramparser/print_subscribers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instagramparser/runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/instagramparser/runner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instagramparser/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/instagramparser/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/instagramparser/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/instagramparser/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/instagramparser/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/instagramparser/pipelines.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/instagramparser/spiders/instagram.py" beforeDir="false" afterPath="$PROJECT_DIR$/instagramparser/spiders/instagram.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +58,7 @@
       <recent name="C:\Users\test\Documents\GitHub\ds_metody_sbora_info\lesson8_scrapy_instagram\instagramparser" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.print_subscribers">
+  <component name="RunManager" selected="Python.runner">
     <configuration name="print_subscribers" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lesson8_scrapy_instagram" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -105,8 +103,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.print_subscribers" />
         <item itemvalue="Python.runner" />
+        <item itemvalue="Python.print_subscribers" />
       </list>
     </recent_temporary>
   </component>
@@ -140,46 +138,46 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1180" y="274" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1601451500201" />
-    <state width="1899" height="323" key="GridCell.Tab.0.bottom" timestamp="1601535617149">
+    <state width="1899" height="271" key="GridCell.Tab.0.bottom" timestamp="1601620750724">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="278" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1601450247152" />
-    <state width="1899" height="323" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601535617149" />
-    <state width="1899" height="323" key="GridCell.Tab.0.center" timestamp="1601535617149">
+    <state width="1899" height="271" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601620750724" />
+    <state width="1899" height="271" key="GridCell.Tab.0.center" timestamp="1601620750724">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="278" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1601450247152" />
-    <state width="1899" height="323" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601535617149" />
-    <state width="1899" height="323" key="GridCell.Tab.0.left" timestamp="1601535617149">
+    <state width="1899" height="271" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601620750724" />
+    <state width="1899" height="271" key="GridCell.Tab.0.left" timestamp="1601620750724">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="278" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1601450247152" />
-    <state width="1899" height="323" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601535617149" />
-    <state width="1899" height="323" key="GridCell.Tab.0.right" timestamp="1601535617149">
+    <state width="1899" height="271" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601620750724" />
+    <state width="1899" height="271" key="GridCell.Tab.0.right" timestamp="1601620750724">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="278" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1601450247152" />
-    <state width="1899" height="323" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601535617149" />
-    <state width="1899" height="419" key="GridCell.Tab.1.bottom" timestamp="1601534477432">
+    <state width="1899" height="271" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601620750724" />
+    <state width="1899" height="271" key="GridCell.Tab.1.bottom" timestamp="1601620750724">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="278" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1601455797007" />
-    <state width="1899" height="419" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601534477432" />
-    <state width="1899" height="419" key="GridCell.Tab.1.center" timestamp="1601534477431">
+    <state width="1899" height="271" key="GridCell.Tab.1.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601620750724" />
+    <state width="1899" height="271" key="GridCell.Tab.1.center" timestamp="1601620750724">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="278" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1601455797006" />
-    <state width="1899" height="419" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601534477431" />
-    <state width="1899" height="419" key="GridCell.Tab.1.left" timestamp="1601534477431">
+    <state width="1899" height="271" key="GridCell.Tab.1.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601620750724" />
+    <state width="1899" height="271" key="GridCell.Tab.1.left" timestamp="1601620750724">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="278" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1601455797006" />
-    <state width="1899" height="419" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601534477431" />
-    <state width="1899" height="419" key="GridCell.Tab.1.right" timestamp="1601534477431">
+    <state width="1899" height="271" key="GridCell.Tab.1.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601620750724" />
+    <state width="1899" height="271" key="GridCell.Tab.1.right" timestamp="1601620750724">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="278" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1601455797007" />
-    <state width="1899" height="419" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601534477431" />
+    <state width="1899" height="271" key="GridCell.Tab.1.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601620750724" />
     <state x="-1383" y="83" key="SettingsEditor" timestamp="1601364241350">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -190,8 +188,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/instagramparser/spiders/instagram.py</url>
-          <line>61</line>
-          <option name="timeStamp" value="39" />
+          <line>161</line>
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

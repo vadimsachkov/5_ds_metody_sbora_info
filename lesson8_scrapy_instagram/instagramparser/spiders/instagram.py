@@ -23,6 +23,7 @@ class InstagramSpider(scrapy.Spider):
     inst_login_link = 'https://www.instagram.com/accounts/login/ajax/'
     # список пользователей, у которого собираем посты. Можно указать список
     parse_users = ['ostrov_salon','texaspizzeria', 'makcim123098']
+    parse_users = ['ostrov_salon']
 
 
     graphql_url = 'https://www.instagram.com/graphql/query/?'
@@ -33,6 +34,7 @@ class InstagramSpider(scrapy.Spider):
     # gagara1987 подписки   d04b0a864b4b54837c0d870b0e77e076
 
     subscriptions = {}  # словарь где ключ это id_пользователя а значение- список его подписок
+    subscribers = {}  # словарь где ключ это id_пользователя а значение- список его пидписчиков
 
 
     def parse(self, response:HtmlResponse):             #Первый запрос на стартовую страницу
@@ -87,6 +89,10 @@ class InstagramSpider(scrapy.Spider):
         # инициализируем список подписок если он уже не иниацилизирован
         if person_id not in self.subscriptions:
             self.subscriptions[person_id] = []
+
+        # инициализируем список подписчиков если он уже не иниацилизирован
+        if person_id not in self.subscribers:
+            self.subscribers[person_id] = []
         yield response.follow(
             url_posts,
             callback=self.user_posts_parse,
@@ -123,9 +129,12 @@ class InstagramSpider(scrapy.Spider):
                 username=user['node']['username'],
                 subscriptions=[followto_id]  # присводить subscriptions=номер пользователя , так этот пользователь подписан
             )
+            # если это подписка персоны , тозакинем в словарь self.subscriptions
             if not followto_id:
-
                 self.subscriptions[person_id].append(user['node']['id'])
+            else:
+                # иначе в словарь подписчиков
+                self.subscribers[person_id].append(user['node']['id'])
 
             yield item   #В пайплайн
 
@@ -142,14 +151,15 @@ class InstagramSpider(scrapy.Spider):
                            'followto_id':followto_id}
             )
         else:
-            # зкончились все подписки - пора создавать Персону
-            # создаем iteм самого пользователя _Условно назовем его mainUser
+            # закончились все подписки - пора создавать Персону
+            # создаем iteм самого пользователя _Условно назовем его Персоной
             person_item = InstagramParserItem(
                 user_id=person_id,
                 photo=response.xpath('//div[@class="XjzKX"]//img/@src'),
                 fullname=response.xpath('//h1/text()'),
                 username=person_name,
-                subscriptions=self.subscriptions[person_id]  # создаем пустое множество кужа потом будут добавляться на кого подписан пользователь
+                subscriptions=self.subscriptions[person_id],  # список подписок персоны
+                subscribers=self.subscribers[person_id]        # список подписчиков персоны. Нужно чтобы позже актуализировать подписки на персону , если они уже отписались
             )
             yield person_item
 
